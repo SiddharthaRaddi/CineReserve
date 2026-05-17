@@ -1,0 +1,251 @@
+<!-- Toast Notification -->
+@if (toastVisible) {
+  <div class="cr-toast" [class.success]="toastType === 'success'" [class.error]="toastType === 'error'">
+    <span class="cr-toast-icon">
+      @if (toastType === 'success') { <i class="bi bi-check-circle-fill"></i> }
+      @if (toastType === 'error')   { <i class="bi bi-x-circle-fill"></i> }
+    </span>
+    <span>{{ toastMessage }}</span>
+  </div>
+}
+
+<!-- NAVBAR -->
+<nav class="cr-navbar">
+  <div class="cr-navbar-inner">
+    <div class="cr-logo">
+      <span class="cr-logo-icon"><i class="bi bi-film"></i></span>
+      <span class="cr-logo-text">Cine<span class="cr-logo-accent">Reserve</span></span>
+      <span class="cr-logo-badge">Enterprise</span>
+    </div>
+    <div class="cr-navbar-actions">
+      <a routerLink="/admin" class="cr-admin-btn">
+        <i class="bi bi-shield-lock-fill me-2"></i>Admin Portal
+      </a>
+    </div>
+  </div>
+</nav>
+
+<!-- MAIN LAYOUT -->
+<div class="cr-page">
+
+  <!-- NOW SHOWING SECTION -->
+  <section class="cr-section">
+    <div class="cr-section-header">
+      <h2 class="cr-section-title">
+        <span class="cr-section-dot"></span>
+        Now Showing
+      </h2>
+      <p class="cr-section-sub">Select a movie and showtime to begin booking</p>
+    </div>
+
+    @if (moviesLoading) {
+      <div class="cr-loading">
+        <div class="cr-spinner"></div>
+        <p>Loading movies from database...</p>
+      </div>
+    }
+
+    @if (!moviesLoading) {
+    <div class="cr-movies-grid">
+      @for (movie of movies; track movie.id) {
+        <div class="cr-movie-card">
+          <div class="cr-poster-wrap">
+            <img
+            [src]="movie.poster"
+            [alt]="movie.title"
+            class="cr-poster"
+            (error)="$any($event.target).src='https://placehold.co/400x600/e2e8f0/475569?text=' + movie.title"
+          />
+            <div class="cr-poster-overlay">
+              <div class="cr-rating-badge">
+                <i class="bi bi-star-fill"></i> {{ movie.rating }}
+              </div>
+            </div>
+          </div>
+          <div class="cr-movie-info">
+            <h3 class="cr-movie-title">{{ movie.title }}</h3>
+            <div class="cr-movie-meta">
+              <span class="cr-genre-pill">{{ movie.genre }}</span>
+              <span class="cr-duration"><i class="bi bi-clock me-1"></i>{{ movie.duration }}</span>
+            </div>
+            <div class="cr-showtimes">
+              <p class="cr-showtime-label"><i class="bi bi-calendar3 me-1"></i> Today's Shows</p>
+              @if (movie.showtimes.length > 0) {
+                <div class="cr-showtime-btns">
+                  @for (st of movie.showtimes; track st.id) {
+                    <button
+                      class="cr-time-btn"
+                      [class.active]="currentShowtimeId === st.id"
+                      (click)="selectShowtime(st.id, movie.title, st.time)"
+                    >
+                      <i class="bi bi-play-circle me-1"></i>{{ st.time }}
+                    </button>
+                  }
+                </div>
+              } @else {
+                <p class="cr-no-showtimes">No shows scheduled yet</p>
+              }
+            </div>
+          </div>
+        </div>
+      }
+    </div>
+    }
+  </section>
+
+  <!-- SEAT SELECTION + BOOKING SUMMARY -->
+  <div class="cr-booking-layout">
+
+    <!-- SEAT MAP -->
+    <section class="cr-seat-section">
+      <div class="cr-seat-header">
+        <h2 class="cr-section-title">
+          <span class="cr-section-dot"></span>
+          Select Your Seats
+        </h2>
+        <div class="cr-showing-tag">
+          <i class="bi bi-film me-1"></i>
+          {{ selectedMovieTitle }} &nbsp;·&nbsp; {{ selectedShowtimeLabel }}
+        </div>
+      </div>
+
+      <!-- Screen -->
+      <div class="cr-screen-wrap">
+        <div class="cr-screen">
+          <span>SCREEN</span>
+        </div>
+        <div class="cr-screen-glow"></div>
+      </div>
+
+      <!-- Seat Grid -->
+      <div class="cr-seat-grid">
+        @for (row of rows; track row) {
+          <div class="cr-row">
+            <span class="cr-row-label" [class.vip-label]="isVip(row)">
+              {{ row }}
+              @if (isVip(row)) { <span class="cr-vip-tag">VIP</span> }
+            </span>
+            <div class="cr-seats">
+              @for (seat of seats; track seat) {
+                <button
+                  class="cr-seat"
+                  [class.cr-seat--booked]="isBooked(row + seat)"
+                  [class.cr-seat--selected]="isSelected(row + seat)"
+                  [class.cr-seat--available]="!isBooked(row + seat) && !isSelected(row + seat) && !isVip(row)"
+                  [class.cr-seat--vip]="isVip(row) && !isBooked(row + seat) && !isSelected(row + seat)"
+                  [disabled]="isBooked(row + seat)"
+                  (click)="toggleSeat(row + seat)"
+                  [title]="row + seat + (isVip(row) ? ' (VIP ₹400)' : ' (₹250)')"
+                >
+                  {{ row }}{{ seat }}
+                </button>
+              }
+            </div>
+          </div>
+        }
+      </div>
+
+      <!-- Legend -->
+      <div class="cr-legend">
+        <div class="cr-legend-item">
+          <span class="cr-legend-dot available"></span>
+          <span>Available ₹250</span>
+        </div>
+        <div class="cr-legend-item">
+          <span class="cr-legend-dot vip"></span>
+          <span>VIP ₹400</span>
+        </div>
+        <div class="cr-legend-item">
+          <span class="cr-legend-dot selected"></span>
+          <span>Selected</span>
+        </div>
+        <div class="cr-legend-item">
+          <span class="cr-legend-dot booked"></span>
+          <span>Sold Out</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- BOOKING SUMMARY SIDEBAR -->
+    <aside class="cr-summary">
+      <div class="cr-summary-header">
+        <i class="bi bi-ticket-perforated-fill cr-summary-icon"></i>
+        <div>
+          <h3 class="cr-summary-title">Booking Summary</h3>
+          <p class="cr-summary-sub">{{ selectedMovieTitle }}</p>
+        </div>
+      </div>
+
+      <div class="cr-summary-row">
+        <span class="cr-summary-label"><i class="bi bi-projector me-2"></i>Showtime</span>
+        <span class="cr-summary-value">{{ selectedShowtimeLabel }}</span>
+      </div>
+
+      <div class="cr-summary-row">
+        <span class="cr-summary-label"><i class="bi bi-people me-2"></i>Seats Selected</span>
+        <span class="cr-summary-value">{{ selectedSeats.length }}</span>
+      </div>
+
+      <!-- Seat chips -->
+      @if (selectedSeats.length > 0) {
+        <div class="cr-seat-chips">
+          @for (seat of selectedSeats; track seat) {
+            <div class="cr-seat-chip">
+              <span>{{ seat }}</span>
+              <span class="cr-chip-price">₹{{ getSeatPrice(seat) }}</span>
+              <button class="cr-chip-remove" (click)="removeSeat(seat)">
+                <i class="bi bi-x"></i>
+              </button>
+            </div>
+          }
+        </div>
+      } @else {
+        <div class="cr-empty-state">
+          <i class="bi bi-cursor-fill"></i>
+          <p>Click seats on the map to select</p>
+        </div>
+      }
+
+      <div class="cr-summary-divider"></div>
+
+      <!-- Price breakdown -->
+      <div class="cr-price-breakdown">
+        <div class="cr-summary-row">
+          <span class="cr-summary-label">Subtotal</span>
+          <span class="cr-summary-value">₹{{ totalAmount }}</span>
+        </div>
+        <div class="cr-summary-row">
+          <span class="cr-summary-label">Convenience Fee</span>
+          <span class="cr-summary-value">₹{{ selectedSeats.length > 0 ? 30 * selectedSeats.length : 0 }}</span>
+        </div>
+        <div class="cr-total-row">
+          <span class="cr-total-label">Total Payable</span>
+          <span class="cr-total-amount">₹{{ totalAmount + (selectedSeats.length > 0 ? 30 * selectedSeats.length : 0) }}</span>
+        </div>
+      </div>
+
+      @if (bookingRef) {
+        <div class="cr-booking-ref">
+          <i class="bi bi-check-circle-fill me-2"></i>
+          Ref: <strong>{{ bookingRef }}</strong>
+        </div>
+      }
+
+      <button
+        class="cr-confirm-btn"
+        [class.cr-confirm-btn--disabled]="selectedSeats.length === 0"
+        [disabled]="selectedSeats.length === 0"
+        (click)="confirmBooking()"
+      >
+        <i class="bi bi-lock-fill me-2"></i>
+        Confirm &amp; Book — ₹{{ totalAmount + (selectedSeats.length > 0 ? 30 * selectedSeats.length : 0) }}
+      </button>
+
+      <p class="cr-summary-note">
+        <i class="bi bi-shield-check me-1"></i>
+        Secured by SSL · Instant confirmation
+      </p>
+    </aside>
+
+  </div>
+</div>

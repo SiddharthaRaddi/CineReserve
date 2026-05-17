@@ -1,0 +1,217 @@
+<!-- Toast -->
+@if (toastVisible) {
+  <div class="cr-toast" [class.success]="toastType === 'success'" [class.error]="toastType === 'error'">
+    <span class="cr-toast-icon">
+      @if (toastType === 'success') { <i class="bi bi-check-circle-fill"></i> }
+      @if (toastType === 'error')   { <i class="bi bi-x-circle-fill"></i> }
+    </span>
+    <span>{{ toastMessage }}</span>
+  </div>
+}
+
+<div class="adm-page">
+
+  <!-- SIDEBAR -->
+  <aside class="adm-sidebar">
+    <div class="adm-brand">
+      <span class="adm-brand-icon"><i class="bi bi-film"></i></span>
+      <div>
+        <div class="adm-brand-name">Cine<span>Reserve</span></div>
+        <div class="adm-brand-sub">Admin Console</div>
+      </div>
+    </div>
+
+    @if (isLoggedIn) {
+      <div class="adm-user-badge">
+        <div class="adm-avatar"><i class="bi bi-person-fill"></i></div>
+        <div>
+          <div class="adm-user-name">{{ adminName }}</div>
+          <div class="adm-user-role">Super Admin</div>
+        </div>
+      </div>
+
+      <div class="adm-sidebar-stats">
+        <div class="adm-stat">
+          <span class="adm-stat-value">{{ movieList.length }}</span>
+          <span class="adm-stat-label">Movies</span>
+        </div>
+        <div class="adm-stat-divider"></div>
+        <div class="adm-stat">
+          <span class="adm-stat-dot"></span>
+          <span class="adm-stat-label">Live</span>
+        </div>
+      </div>
+
+      <!-- Movie list in sidebar -->
+      @if (movieList.length > 0) {
+        <div class="adm-movie-list">
+          <p class="adm-movie-list-label">In Database</p>
+          @for (m of movieList; track m.id; let i = $index) {
+            <div class="adm-movie-item">
+              <span class="adm-movie-item-id">#{{ i + 1 }}</span>
+              <span class="adm-movie-item-name">{{ m.title }}</span>
+            </div>
+          }
+        </div>
+      }
+    }
+
+    <div class="adm-sidebar-footer">
+      <a routerLink="/" class="adm-back-btn">
+        <i class="bi bi-arrow-left-circle-fill me-2"></i>Back to Booking
+      </a>
+    </div>
+  </aside>
+
+  <!-- MAIN -->
+  <main class="adm-main">
+
+    <!-- LOGIN -->
+    @if (!isLoggedIn) {
+      <div class="adm-login-wrap">
+        <div class="adm-login-card">
+          <div class="adm-login-icon"><i class="bi bi-shield-lock-fill"></i></div>
+          <h1 class="adm-login-title">Admin Access</h1>
+          <p class="adm-login-sub">Enter your credentials to manage CineReserve</p>
+          <div class="adm-form-group">
+            <label class="adm-label"><i class="bi bi-person me-2"></i>Username</label>
+            <input id="admin-username" type="text" class="adm-input" placeholder="admin" [(ngModel)]="username" (keyup.enter)="login()" />
+          </div>
+          <div class="adm-form-group">
+            <label class="adm-label"><i class="bi bi-lock me-2"></i>Password</label>
+            <input id="admin-password" type="password" class="adm-input" placeholder="••••••••" [(ngModel)]="password" (keyup.enter)="login()" />
+          </div>
+          <button class="adm-login-btn" (click)="login()">
+            <i class="bi bi-box-arrow-in-right me-2"></i>Sign In
+          </button>
+          <p class="adm-hint">Hint: admin / admin123</p>
+        </div>
+      </div>
+    }
+
+    <!-- ADMIN DASHBOARD -->
+    @if (isLoggedIn) {
+      <div class="adm-content">
+
+        <!-- Header -->
+        <div class="adm-content-header">
+          <div>
+            <h1 class="adm-content-title">Cinema Management</h1>
+            <p class="adm-content-sub">Add movies and schedule showtimes for your cinema</p>
+          </div>
+          <div class="adm-status-badge">
+            <span class="adm-status-dot"></span>Backend Connected
+          </div>
+        </div>
+
+        <!-- TWO COLUMNS: Add Movie | Add Showtime -->
+        <div class="adm-dashboard-grid">
+
+          <!-- ADD MOVIE -->
+          <div class="adm-card">
+            <div class="adm-card-header">
+              <div class="adm-card-icon movie-icon"><i class="bi bi-camera-video-fill"></i></div>
+              <div>
+                <h3 class="adm-card-title">Add New Movie</h3>
+                <p class="adm-card-sub">Movie will appear on the booking page</p>
+              </div>
+            </div>
+
+            <div class="adm-form-group">
+              <label class="adm-label">Movie Title</label>
+              <input id="movie-title" type="text" class="adm-input" placeholder="e.g. Oppenheimer" [(ngModel)]="movieTitle" />
+            </div>
+            <div class="adm-form-group">
+              <label class="adm-label">Genre</label>
+              <input id="movie-genre" type="text" class="adm-input" placeholder="e.g. Biography / Drama" [(ngModel)]="movieGenre" />
+            </div>
+            <div class="adm-form-group">
+              <label class="adm-label">Duration (minutes)</label>
+              <input id="movie-duration" type="number" class="adm-input" placeholder="120" [(ngModel)]="movieDuration" />
+            </div>
+            <div class="adm-form-group">
+              <label class="adm-label">Poster URL</label>
+              <input id="movie-poster" type="text" class="adm-input" placeholder="https://image.tmdb.org/t/p/w500/..." [(ngModel)]="moviePoster" />
+            </div>
+
+            <!-- Inline poster preview -->
+            @if (moviePoster) {
+              <div class="adm-inline-preview">
+                <img
+                  [src]="moviePoster"
+                  [alt]="movieTitle"
+                  class="adm-preview-thumb"
+                  (error)="$any($event.target).src='https://placehold.co/100x150/e2e8f0/ef4444?text=Broken+URL'"
+                />
+                <div class="adm-preview-text">
+                  <strong>{{ movieTitle || 'Movie Title' }}</strong>
+                  <span>{{ movieGenre || 'Genre' }} · {{ movieDuration }} min</span>
+                </div>
+              </div>
+            }
+
+            <button class="adm-submit-btn" (click)="addMovie()">
+              <i class="bi bi-plus-circle-fill me-2"></i>Add Movie to Database
+            </button>
+          </div>
+
+          <!-- SCHEDULE SHOWTIME -->
+          <div class="adm-card">
+            <div class="adm-card-header">
+              <div class="adm-card-icon show-icon"><i class="bi bi-calendar-event-fill"></i></div>
+              <div>
+                <h3 class="adm-card-title">Schedule a Showtime</h3>
+                <p class="adm-card-sub">Assign a time slot to an existing movie</p>
+              </div>
+            </div>
+
+            <div class="adm-form-group">
+              <label class="adm-label">Select Movie</label>
+              @if (movieList.length > 0) {
+                <select id="showtime-movie" class="adm-input adm-select" [(ngModel)]="selectedMovieId">
+                  @for (m of movieList; track m.id) {
+                    <option [ngValue]="m.id">{{ m.title }}</option>
+                  }
+                </select>
+              } @else {
+                <div class="adm-no-movies">
+                  <i class="bi bi-exclamation-circle me-2"></i>No movies in database yet. Add one first.
+                </div>
+              }
+            </div>
+
+            <!-- Selected movie preview -->
+            @if (selectedMovieId && movieList.length > 0) {
+              <div class="adm-selected-movie">
+                <i class="bi bi-film me-2"></i>
+                <span>{{ selectedMovieName }}</span>
+              </div>
+            }
+
+            <div class="adm-form-group">
+              <label class="adm-label">Show Time</label>
+              <input id="showtime-time" type="time" class="adm-input" [(ngModel)]="showtimeTime" />
+              <span class="adm-input-hint">Select time using the time picker</span>
+            </div>
+
+            <div class="adm-form-group">
+              <label class="adm-label">Hall / Screen</label>
+              <select id="showtime-hall" class="adm-input adm-select" [(ngModel)]="hallName">
+                <option value="Hall A">Hall A</option>
+                <option value="Hall B">Hall B</option>
+                <option value="Hall C">Hall C</option>
+                <option value="Screen 1">Screen 1</option>
+                <option value="Screen 2">Screen 2</option>
+              </select>
+            </div>
+
+            <button class="adm-submit-btn show-btn" (click)="addShowtime()" [disabled]="movieList.length === 0">
+              <i class="bi bi-calendar-plus-fill me-2"></i>Schedule Showtime
+            </button>
+          </div>
+
+        </div>
+      </div>
+    }
+  </main>
+</div>
