@@ -1,0 +1,297 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\siddh\\source\\repos\\CineReserve.API\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{7B19BB35-83BA-1CD2-8B52-D17492B5B7E5}|CineReserve.API\\CineReserve.API.csproj|c:\\users\\siddh\\source\\repos\\cinereserve.api\\cinereserve.api\\controllers\\showtimescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7B19BB35-83BA-1CD2-8B52-D17492B5B7E5}|CineReserve.API\\CineReserve.API.csproj|solutionrelative:cinereserve.api\\controllers\\showtimescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7B19BB35-83BA-1CD2-8B52-D17492B5B7E5}|CineReserve.API\\CineReserve.API.csproj|c:\\users\\siddh\\source\\repos\\cinereserve.api\\cinereserve.api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7B19BB35-83BA-1CD2-8B52-D17492B5B7E5}|CineReserve.API\\CineReserve.API.csproj|solutionrelative:cinereserve.api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7B19BB35-83BA-1CD2-8B52-D17492B5B7E5}|CineReserve.API\\CineReserve.API.csproj|c:\\users\\siddh\\source\\repos\\cinereserve.api\\cinereserve.api\\controllers\\bookingscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7B19BB35-83BA-1CD2-8B52-D17492B5B7E5}|CineReserve.API\\CineReserve.API.csproj|solutionrelative:cinereserve.api\\controllers\\bookingscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7B19BB35-83BA-1CD2-8B52-D17492B5B7E5}|CineReserve.API\\CineReserve.API.csproj|c:\\users\\siddh\\source\\repos\\cinereserve.api\\cinereserve.api\\dtos\\bookingrequestdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7B19BB35-83BA-1CD2-8B52-D17492B5B7E5}|CineReserve.API\\CineReserve.API.csproj|solutionrelative:cinereserve.api\\dtos\\bookingrequestdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7B19BB35-83BA-1CD2-8B52-D17492B5B7E5}|CineReserve.API\\CineReserve.API.csproj|c:\\users\\siddh\\source\\repos\\cinereserve.api\\cinereserve.api\\controllers\\moviescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7B19BB35-83BA-1CD2-8B52-D17492B5B7E5}|CineReserve.API\\CineReserve.API.csproj|solutionrelative:cinereserve.api\\controllers\\moviescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7B19BB35-83BA-1CD2-8B52-D17492B5B7E5}|CineReserve.API\\CineReserve.API.csproj|c:\\users\\siddh\\source\\repos\\cinereserve.api\\cinereserve.api\\services\\bookingservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7B19BB35-83BA-1CD2-8B52-D17492B5B7E5}|CineReserve.API\\CineReserve.API.csproj|solutionrelative:cinereserve.api\\services\\bookingservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7B19BB35-83BA-1CD2-8B52-D17492B5B7E5}|CineReserve.API\\CineReserve.API.csproj|c:\\users\\siddh\\source\\repos\\cinereserve.api\\cinereserve.api\\models\\loginrequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7B19BB35-83BA-1CD2-8B52-D17492B5B7E5}|CineReserve.API\\CineReserve.API.csproj|solutionrelative:cinereserve.api\\models\\loginrequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7B19BB35-83BA-1CD2-8B52-D17492B5B7E5}|CineReserve.API\\CineReserve.API.csproj|c:\\users\\siddh\\source\\repos\\cinereserve.api\\cinereserve.api\\controllers\\authcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7B19BB35-83BA-1CD2-8B52-D17492B5B7E5}|CineReserve.API\\CineReserve.API.csproj|solutionrelative:cinereserve.api\\controllers\\authcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7B19BB35-83BA-1CD2-8B52-D17492B5B7E5}|CineReserve.API\\CineReserve.API.csproj|c:\\users\\siddh\\source\\repos\\cinereserve.api\\cinereserve.api\\dtos\\seatstatusdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7B19BB35-83BA-1CD2-8B52-D17492B5B7E5}|CineReserve.API\\CineReserve.API.csproj|solutionrelative:cinereserve.api\\dtos\\seatstatusdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7B19BB35-83BA-1CD2-8B52-D17492B5B7E5}|CineReserve.API\\CineReserve.API.csproj|c:\\users\\siddh\\source\\repos\\cinereserve.api\\cinereserve.api\\dtos\\seatdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7B19BB35-83BA-1CD2-8B52-D17492B5B7E5}|CineReserve.API\\CineReserve.API.csproj|solutionrelative:cinereserve.api\\dtos\\seatdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7B19BB35-83BA-1CD2-8B52-D17492B5B7E5}|CineReserve.API\\CineReserve.API.csproj|c:\\users\\siddh\\source\\repos\\cinereserve.api\\cinereserve.api\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{7B19BB35-83BA-1CD2-8B52-D17492B5B7E5}|CineReserve.API\\CineReserve.API.csproj|solutionrelative:cinereserve.api\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7B19BB35-83BA-1CD2-8B52-D17492B5B7E5}|CineReserve.API\\CineReserve.API.csproj|c:\\users\\siddh\\source\\repos\\cinereserve.api\\cinereserve.api\\data\\appdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7B19BB35-83BA-1CD2-8B52-D17492B5B7E5}|CineReserve.API\\CineReserve.API.csproj|solutionrelative:cinereserve.api\\data\\appdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7B19BB35-83BA-1CD2-8B52-D17492B5B7E5}|CineReserve.API\\CineReserve.API.csproj|c:\\users\\siddh\\source\\repos\\cinereserve.api\\cinereserve.api\\models\\ticketdetail.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7B19BB35-83BA-1CD2-8B52-D17492B5B7E5}|CineReserve.API\\CineReserve.API.csproj|solutionrelative:cinereserve.api\\models\\ticketdetail.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7B19BB35-83BA-1CD2-8B52-D17492B5B7E5}|CineReserve.API\\CineReserve.API.csproj|c:\\users\\siddh\\source\\repos\\cinereserve.api\\cinereserve.api\\models\\booking.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7B19BB35-83BA-1CD2-8B52-D17492B5B7E5}|CineReserve.API\\CineReserve.API.csproj|solutionrelative:cinereserve.api\\models\\booking.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7B19BB35-83BA-1CD2-8B52-D17492B5B7E5}|CineReserve.API\\CineReserve.API.csproj|c:\\users\\siddh\\source\\repos\\cinereserve.api\\cinereserve.api\\models\\showtime.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7B19BB35-83BA-1CD2-8B52-D17492B5B7E5}|CineReserve.API\\CineReserve.API.csproj|solutionrelative:cinereserve.api\\models\\showtime.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7B19BB35-83BA-1CD2-8B52-D17492B5B7E5}|CineReserve.API\\CineReserve.API.csproj|c:\\users\\siddh\\source\\repos\\cinereserve.api\\cinereserve.api\\models\\movie.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7B19BB35-83BA-1CD2-8B52-D17492B5B7E5}|CineReserve.API\\CineReserve.API.csproj|solutionrelative:cinereserve.api\\models\\movie.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7B19BB35-83BA-1CD2-8B52-D17492B5B7E5}|CineReserve.API\\CineReserve.API.csproj|c:\\users\\siddh\\source\\repos\\cinereserve.api\\cinereserve.api\\cinereserve.api.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{7B19BB35-83BA-1CD2-8B52-D17492B5B7E5}|CineReserve.API\\CineReserve.API.csproj|solutionrelative:cinereserve.api\\cinereserve.api.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 5,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{34e76e81-ee4a-11d0-ae2e-00a0c90fffc3}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\siddh\\source\\repos\\CineReserve.API\\CineReserve.API\\Program.cs",
+              "RelativeDocumentMoniker": "CineReserve.API\\Program.cs",
+              "ToolTip": "C:\\Users\\siddh\\source\\repos\\CineReserve.API\\CineReserve.API\\Program.cs",
+              "RelativeToolTip": "CineReserve.API\\Program.cs",
+              "ViewState": "AgIAACcAAAAAAAAAAADwvyoAAAAoAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-16T03:59:50.032Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "BookingsController.cs",
+              "DocumentMoniker": "C:\\Users\\siddh\\source\\repos\\CineReserve.API\\CineReserve.API\\Controllers\\BookingsController.cs",
+              "RelativeDocumentMoniker": "CineReserve.API\\Controllers\\BookingsController.cs",
+              "ToolTip": "C:\\Users\\siddh\\source\\repos\\CineReserve.API\\CineReserve.API\\Controllers\\BookingsController.cs",
+              "RelativeToolTip": "CineReserve.API\\Controllers\\BookingsController.cs",
+              "ViewState": "AgIAAAgAAAAAAAAAAAAxwBwAAAAkAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-16T04:12:45.565Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "BookingRequestDto.cs",
+              "DocumentMoniker": "C:\\Users\\siddh\\source\\repos\\CineReserve.API\\CineReserve.API\\DTOs\\BookingRequestDto.cs",
+              "RelativeDocumentMoniker": "CineReserve.API\\DTOs\\BookingRequestDto.cs",
+              "ToolTip": "C:\\Users\\siddh\\source\\repos\\CineReserve.API\\CineReserve.API\\DTOs\\BookingRequestDto.cs",
+              "RelativeToolTip": "CineReserve.API\\DTOs\\BookingRequestDto.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-16T04:05:51.677Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "MoviesController.cs",
+              "DocumentMoniker": "C:\\Users\\siddh\\source\\repos\\CineReserve.API\\CineReserve.API\\Controllers\\MoviesController.cs",
+              "RelativeDocumentMoniker": "CineReserve.API\\Controllers\\MoviesController.cs",
+              "ToolTip": "C:\\Users\\siddh\\source\\repos\\CineReserve.API\\CineReserve.API\\Controllers\\MoviesController.cs",
+              "RelativeToolTip": "CineReserve.API\\Controllers\\MoviesController.cs",
+              "ViewState": "AgIAAAgAAAAAAAAAAAAkwCQAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-16T04:01:42.807Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "ShowtimesController.cs",
+              "DocumentMoniker": "C:\\Users\\siddh\\source\\repos\\CineReserve.API\\CineReserve.API\\Controllers\\ShowtimesController.cs",
+              "RelativeDocumentMoniker": "CineReserve.API\\Controllers\\ShowtimesController.cs",
+              "ToolTip": "C:\\Users\\siddh\\source\\repos\\CineReserve.API\\CineReserve.API\\Controllers\\ShowtimesController.cs",
+              "RelativeToolTip": "CineReserve.API\\Controllers\\ShowtimesController.cs",
+              "ViewState": "AgIAAB0AAAAAAAAAAAAowDMAAAAgAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-16T04:21:40.4Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "BookingService.cs",
+              "DocumentMoniker": "C:\\Users\\siddh\\source\\repos\\CineReserve.API\\CineReserve.API\\Services\\BookingService.cs",
+              "RelativeDocumentMoniker": "CineReserve.API\\Services\\BookingService.cs",
+              "ToolTip": "C:\\Users\\siddh\\source\\repos\\CineReserve.API\\CineReserve.API\\Services\\BookingService.cs",
+              "RelativeToolTip": "CineReserve.API\\Services\\BookingService.cs",
+              "ViewState": "AgIAACQAAAAAAAAAAAAAAE0AAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-16T04:07:13.381Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "LoginRequest.cs",
+              "DocumentMoniker": "C:\\Users\\siddh\\source\\repos\\CineReserve.API\\CineReserve.API\\Models\\LoginRequest.cs",
+              "RelativeDocumentMoniker": "CineReserve.API\\Models\\LoginRequest.cs",
+              "ToolTip": "C:\\Users\\siddh\\source\\repos\\CineReserve.API\\CineReserve.API\\Models\\LoginRequest.cs",
+              "RelativeToolTip": "CineReserve.API\\Models\\LoginRequest.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-16T06:07:55.119Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "AuthController.cs",
+              "DocumentMoniker": "C:\\Users\\siddh\\source\\repos\\CineReserve.API\\CineReserve.API\\Controllers\\AuthController.cs",
+              "RelativeDocumentMoniker": "CineReserve.API\\Controllers\\AuthController.cs",
+              "ToolTip": "C:\\Users\\siddh\\source\\repos\\CineReserve.API\\CineReserve.API\\Controllers\\AuthController.cs",
+              "RelativeToolTip": "CineReserve.API\\Controllers\\AuthController.cs",
+              "ViewState": "AgIAAAgAAAAAAAAAAAAAADEAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-16T06:09:03.777Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "SeatStatusDto.cs",
+              "DocumentMoniker": "C:\\Users\\siddh\\source\\repos\\CineReserve.API\\CineReserve.API\\DTOs\\SeatStatusDto.cs",
+              "RelativeDocumentMoniker": "CineReserve.API\\DTOs\\SeatStatusDto.cs",
+              "ToolTip": "C:\\Users\\siddh\\source\\repos\\CineReserve.API\\CineReserve.API\\DTOs\\SeatStatusDto.cs",
+              "RelativeToolTip": "CineReserve.API\\DTOs\\SeatStatusDto.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-16T04:23:51.796Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "SeatDto.cs",
+              "DocumentMoniker": "C:\\Users\\siddh\\source\\repos\\CineReserve.API\\CineReserve.API\\DTOs\\SeatDto.cs",
+              "RelativeDocumentMoniker": "CineReserve.API\\DTOs\\SeatDto.cs",
+              "ToolTip": "C:\\Users\\siddh\\source\\repos\\CineReserve.API\\CineReserve.API\\DTOs\\SeatDto.cs",
+              "RelativeToolTip": "CineReserve.API\\DTOs\\SeatDto.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-16T04:05:05.297Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "C:\\Users\\siddh\\source\\repos\\CineReserve.API\\CineReserve.API\\appsettings.json",
+              "RelativeDocumentMoniker": "CineReserve.API\\appsettings.json",
+              "ToolTip": "C:\\Users\\siddh\\source\\repos\\CineReserve.API\\CineReserve.API\\appsettings.json",
+              "RelativeToolTip": "CineReserve.API\\appsettings.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2026-05-16T03:59:19.184Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "AppDbContext.cs",
+              "DocumentMoniker": "C:\\Users\\siddh\\source\\repos\\CineReserve.API\\CineReserve.API\\Data\\AppDbContext.cs",
+              "RelativeDocumentMoniker": "CineReserve.API\\Data\\AppDbContext.cs",
+              "ToolTip": "C:\\Users\\siddh\\source\\repos\\CineReserve.API\\CineReserve.API\\Data\\AppDbContext.cs",
+              "RelativeToolTip": "CineReserve.API\\Data\\AppDbContext.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACAAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-16T03:58:53.189Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "TicketDetail.cs",
+              "DocumentMoniker": "C:\\Users\\siddh\\source\\repos\\CineReserve.API\\CineReserve.API\\Models\\TicketDetail.cs",
+              "RelativeDocumentMoniker": "CineReserve.API\\Models\\TicketDetail.cs",
+              "ToolTip": "C:\\Users\\siddh\\source\\repos\\CineReserve.API\\CineReserve.API\\Models\\TicketDetail.cs",
+              "RelativeToolTip": "CineReserve.API\\Models\\TicketDetail.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-16T03:57:28.778Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "Booking.cs",
+              "DocumentMoniker": "C:\\Users\\siddh\\source\\repos\\CineReserve.API\\CineReserve.API\\Models\\Booking.cs",
+              "RelativeDocumentMoniker": "CineReserve.API\\Models\\Booking.cs",
+              "ToolTip": "C:\\Users\\siddh\\source\\repos\\CineReserve.API\\CineReserve.API\\Models\\Booking.cs",
+              "RelativeToolTip": "CineReserve.API\\Models\\Booking.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-16T03:57:14.499Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "Showtime.cs",
+              "DocumentMoniker": "C:\\Users\\siddh\\source\\repos\\CineReserve.API\\CineReserve.API\\Models\\Showtime.cs",
+              "RelativeDocumentMoniker": "CineReserve.API\\Models\\Showtime.cs",
+              "ToolTip": "C:\\Users\\siddh\\source\\repos\\CineReserve.API\\CineReserve.API\\Models\\Showtime.cs",
+              "RelativeToolTip": "CineReserve.API\\Models\\Showtime.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-16T03:56:59.364Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "Movie.cs",
+              "DocumentMoniker": "C:\\Users\\siddh\\source\\repos\\CineReserve.API\\CineReserve.API\\Models\\Movie.cs",
+              "RelativeDocumentMoniker": "CineReserve.API\\Models\\Movie.cs",
+              "ToolTip": "C:\\Users\\siddh\\source\\repos\\CineReserve.API\\CineReserve.API\\Models\\Movie.cs",
+              "RelativeToolTip": "CineReserve.API\\Models\\Movie.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-16T03:56:41.452Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "CineReserve.API.csproj",
+              "DocumentMoniker": "C:\\Users\\siddh\\source\\repos\\CineReserve.API\\CineReserve.API\\CineReserve.API.csproj",
+              "RelativeDocumentMoniker": "CineReserve.API\\CineReserve.API.csproj",
+              "ToolTip": "C:\\Users\\siddh\\source\\repos\\CineReserve.API\\CineReserve.API\\CineReserve.API.csproj",
+              "RelativeToolTip": "CineReserve.API\\CineReserve.API.csproj",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2026-05-16T03:45:05.539Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
